@@ -467,6 +467,14 @@ div.swiper-button-prev::after {
   > div.name {
   font-size: 16px;
 }
+.mySwiper4
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > a
+  > div.slider-price
+  > div.name {
+  font-size: 16px;
+}
 @media (max-width: 500px) {
   .mySwiper4 {
     width: 90% !important;
@@ -575,13 +583,13 @@ button.top:hover {
   border-color: black;
   background-color: black;
 }
-button.btnTop{
+button.btnTop {
   padding: 10px 25px;
   color: gray;
   border: 1px solid gray;
   transition: all 300ms linear;
 }
-button.btnTop:hover{
+button.btnTop:hover {
   background-color: black;
   color: lightgray;
 }
@@ -604,4 +612,3 @@ div.hmb-photo {
   right: 50%;
   transform: translateX(50%);
 }
-
