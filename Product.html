@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خرید کت لی</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- start project -->
+    <!-- header -->
+    <div
+      class="header py-[20px] w-[98vw] xl:w-[90vw] 2xl:w-[70vw] px-[10px] sm:px-[20px] mx-auto mt-[20px] flex items-center justify-between border-b-[2px] border-[lightgray] lg:border-none"
+    >
+      <div
+        class="logo flex justify-evenly sm:justify-start sm:gap-[30px] items-center w-[70%]"
+      >
+        <a href="#" class="lg:hidden">
+          <img src="./media/hmb.svg" id="hmblogo" class="w-[30px]" alt="" />
+          <div
+            class="hmb-menu flex flex-col   relative overflow-hidden"
+            id="hmbmenu"
+          >
+            <div class="flex justify-between items-center p-[20px_10px]">
+              <img src="./media/logo.svg" alt="" />
+              <span class="close p-[5px] cursor-pointer" id="close">X</span>
+            </div>
+            <div class="w-[100%] p-[10px_20px]">
+              <ul class="w-[100%] flex flex-col gap-[20px]">
+                <li
+                  class="flex justify-between w-[100% items-center] border-b pb-[10px] text-[14px] font-semibold"
+                >
+                  مردانه <img src="./media/pointer.svg" alt="" />
+                </li>
+                <li
+                  class="flex justify-between w-[100% items-center] border-b pb-[10px] text-[14px] font-semibold"
+                >
+                  زنانه <img src="./media/pointer.svg" alt="" />
+                </li>
+                <li
+                  class="flex justify-between w-[100% items-center] border-b pb-[10px] text-[14px] font-semibold"
+                >
+                  اکسسوری <img src="./media/pointer.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="absolute hmb-photo "><img src="./media/logo-b.aspx" alt="" /></div></div
+        ></a>
+        <img src="./media/logo.svg" class="cursor-pointer" alt="" />
+        <div
+          class="hidden lg:flex relative justify-center items-center w-max border-b-[2px] border-black"
+        >
+          <img src="./media/serach.svg" class="absolute right-[5px]" alt="" />
+          <input
+            type="text"
+            class="p-[5px_35px] rounded-[5px] text-black"
+            placeholder="جستجو در پیراهن ، کفش و ..."
+            name=""
+            id=""
+          />
+        </div>
+      </div>
+      <div class="shop w-max relative">
+        <div class="flex justify-center items-center cursor-pointer">
+          <img src="./media/shop logo.svg" class="w-[30px]" alt="" />
+          <span class="text-black font-semibold text-[14px] hidden lg:block"
+            >سبدخرید شما
+          </span>
+        </div>
+
+        <span
+          class="bg-red-500 flex items-center justify-center text-white rounded-[50%] w-[15px] absolute bottom-[-5px] cursor-pointer text-[12px]"
+          >o</span
+        >
+      </div>
+    </div>
+    <!-- search -->
+    <div
+      class="search mt-[10px] mx-auto flex justify-center items-center relative w-max lg:hidden"
+    >
+      <input
+        type="text"
+        class="bg-[#e7e7e7] w-[80vw] sm:w-[90vw] h-[40px] pr-[40px] flex items-center rounded-[5px]"
+        placeholder="جستجو در پیراهن ، کفش و ..."
+        name=""
+        id=""
+      />
+      <img src="./media/serach.svg" class="absolute right-[10px]" alt="" />
+    </div>
+    <!-- menu -->
+
+    <div
+      class="mx-auto mt-[40px] w-[95vw] xl:w-[90vw] 2xl:w-[70vw] hidden lg:flex justify-between items-center p-[10px_20px] border-b"
+    >
+      <div class="menu flex justify-center items-center">
+        <ul class="flex gap-[30px]">
+          <li class="relative">
+            <a href="#" class="flex gap-[5px]"
+              >مردانه <img src="./media/down pointer.svg" alt=""
+            /></a>
+            <!-- submenu-1 -->
+            <div
+              class="submenu-1 w-[95vw] xl:w-[87vw] 2xl:w-[68vw] bg-white absolute gap-[60px] hidden"
+            >
+              <div>
+                <ul class="flex flex-col gap-[15px] w-max p-[2px]">
+                  <span class="text-[16px] font-semibold cursor-pointer w-max"
+                    >لباس مردانه
+                  </span>
+                  <li>کاپشن و کت</li>
+                  <li>بافت</li>
+                  <li>پیراهن</li>
+                  <li>تیشرت مردانه</li>
+                  <li>ست مردانه</li>
+                  <li>شلوار مردانه</li>
+                  <li>هودی و سویشرت</li>
+                  <li>باوز مردانه</li>
+                  <li>کلاه</li>
+                  <li>ست دو نفره</li>
+                  <li>شلوارک مردانه</li>
+                  <li>رکابی مردانه</li>
+                </ul>
+              </div>
+              <div class="flex flex-col justify-between">
+                <ul class="flex flex-col gap-[15px] w-max p-[2px]">
+                  <span class="text-[16px] font-semibold cursor-pointer w-max"
+                    >کفش مردانه</span
+                  >
+                  <li>کفش اسپرت و ورزشی</li>
+                  <li>نیم بوت</li>
+                  <li>کفش روزمره</li>
+                  <li>کفش رسمی</li>
+                  <li>صندل مردانه</li>
+                </ul>
+                <ul class="flex flex-col gap-[15px] w-max p-[2px]">
+                  <span class="text-[16px] font-semibold cursor-pointer w-max"
+                    >کیف مردانه</span
+                  >
+                  <li>ست چرمی</li>
+                  <li>کوله و ساک ورزشی</li>
+                  <li>کیف دوشی</li>
+                  <li>کیف پول</li>
+                  <li>کیف اداری</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="relative">
+            <a href="#" class="flex gap-[5px]"
+              >زنانه <img src="./media/down pointer.svg" alt=""
+            /></a>
+            <!-- submenu-2 -->
+            <div
+              class="submenu-2 absolute hidden w-[95vw] xl:w-[87vw] 2xl:w-[68vw] bg-white h-[50vh]"
+            >
+              <ul class="flex flex-col gap-[50px]">
+                <li>
+                  لباس زنانه <img src="./media/down pointer.svg" alt="" />
+                </li>
+                <li>کفش زنانه <img src="/media/down pointer.svg" alt="" /></li>
+                <li>کیف زنانه <img src="/media/down pointer.svg" alt="" /></li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative">
+            <a href="#" class="flex gap-[5px]"
+              >اکسسوری <img src="./media/down pointer.svg" alt=""
+            /></a>
+            <!-- submenu-3 -->
+            <div
+              class="submenu-3 absolute hidden w-[95vw] xl:w-[87vw] 2xl:w-[68vw] bg-white h-[50vh] gap-[70px] p-[10px]"
+            >
+              <div class="flex flex-col gap-[40px]">
+                <span
+                  >ست ساعت مچی <img src="./media/down pointer.svg" alt=""
+                /></span>
+                <ul class="flex flex-col gap-[15px]">
+                  <span
+                    >ساعت مچی عقربه ای
+                    <img src="./media/down pointer.svg" alt=""
+                  /></span>
+                  <li>ساعت مچی عقربه ای مردانه</li>
+                  <li>ساعت مچی عقربه ای زنانه</li>
+                </ul>
+                <ul class="flex flex-col gap-[15px]">
+                  <span
+                    >ساعت مچی دیجیتال
+                    <img src="./media/down pointer.svg" alt=""
+                  /></span>
+                  <li>ساعت مچی دیجیتال مردانه</li>
+                  <li>ساعت مچی دیجیتال زنانه</li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-[35px]">
+                <ul class="flex flex-col gap-[15px]">
+                  <span
+                    >عینک <img src="./media/down pointer.svg" alt=""
+                  /></span>
+                  <li>عینک آفتابی مردانه</li>
+                  <li>عینک آفتابی زنانه</li>
+                  <li>عینک روزمره</li>
+                </ul>
+                <span
+                  >کمربند مردانه <img src="./media/down pointer.svg" alt=""
+                /></span>
+                <span
+                  >زیورآلات <img src="./media/down pointer.svg" alt=""
+                /></span>
+                <ul class="flex flex-col gap-[15px]">
+                  <span
+                    >عطر و ادکلن <img src="./media/down pointer.svg" alt=""
+                  /></span>
+                  <li>عطر و ادکلن مردانه</li>
+                  <li>عطر ئ ادکلن زنانه</li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex flex-col gap-[15px]">
+                  <span
+                    >گجت پوشیدنی <img src="./media/down pointer.svg" alt=""
+                  /></span>
+                  <li>ساعت هوشمند</li>
+                  <li>مچ بند هوشمند</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a
+        href="#"
+        class="text-[#7A8BC2] font-semibold hover:text-black transition-all ease-linear duration-200 pb-[20px]"
+        >مجله دایان شاپ</a
+      >
+    </div>
+    <!-- road -->
+    <p
+      class="mt-[30px] p-[7px] text-[14px] lg:text-[16px] font-semibold mx-auto w-[90vw] 2xl:w-[70vw] overflow-auto"
+    >
+      فروشگاه اینترنتی دایان شاپ / مردانه / لباس مردانه / کاپشن و کت /
+      <span class="text-[gray] font-normal"> کت لی مردانه اسپرت Fashion</span>
+    </p>
+    <!--start-slider -->
+    <section class="slider w-[80vw] p-[10px] mt-[50px] mx-auto lg:hidden">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-[10px]">
+            <img src="./media/slider-shop-1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide p-[10px]">
+            <img src="./media/slider-shop-2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide p-[10px]">
+            <img src="./media/slider-shop-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- end-slider -->
+    <div
+      class="w-[80vw] mx-auto p-[10px] flex flex-col gap-[25px] mt-[15px] lg:hidden"
+    >
+      <div class="flex flex-col">
+        <div class="flex gap-[10px] items-center justify-start">
+          <span class="price p-[3px_10px] bg-[#FF385C] text-white">33%</span>
+          <span class="price font-semibold text-[14px] text-[gray]"
+            >2،739،000</span
+          >
+        </div>
+        <div>
+          <span class="price text-[26px] text-[#FF385C] font-extrabold"
+            >1,829,000</span
+          >
+          <span class="text-[14px] text-[#FF385C] font-semibold">تومان</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <p class="text-[gray] text-[14px] md:text-[16px] flex gap-[10px]">
+          آستین <span class="text-black">بلند</span>
+        </p>
+        <p class="text-[gray] text-[14px] md:text-[16px] flex gap-[10px]">
+          جنس <span class="text-black">لی</span>
+        </p>
+        <p class="text-[gray] text-[14px] md:text-[16px] flex gap-[10px]">
+          رنگ <span class="text-black">آبی روشن</span>
+        </p>
+        <p class="text-[gray] text-[14px] md:text-[16px] flex gap-[10px]">
+          سایز <span class="text-black">XXXL,XXL,XL,L</span>
+        </p>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <div>
+          <p class="text-[14px]">
+            سایز : <span class="text-[gray]">لطفا یک سایز را انتخاب کنید </span>
+          </p>
+        </div>
+        <div class="size">
+          <ul class="w-[100%] flex justify-between">
+            <li>L</li>
+            <li>XL</li>
+            <li>XXL</li>
+            <li>XXXL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <p>رنگ های دیگر</p>
+        <div class="size-1 p-[5px]">
+          <img src="./media/size.jpg" class="w-[50px] md:w-[150px]" alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-[95vw] xl:w-[90vw] 2xl:w-[70vw] mt-[70px] p-[5px] hidden lg:flex justify-between items-start mx-auto"
+    >
+      <div class="w-[49%] flex flex-col gap-[20px]">
+        <div class="photo p-[15px] w-max" id="image">
+          <img src="./media/slider-shop-1.jpg" class="w-[400px]" alt="" />
+        </div>
+        <div class="flex items-center justify-start gap-[10px]">
+          <div class="photo w-max p-[5px] cursor-pointer" id="images">
+            <img src="./media/slider-shop-1.jpg" class="w-[100px]" alt="" />
+          </div>
+          <div class="photo w-max p-[5px] cursor-pointer" id="images">
+            <img src="./media/slider-shop-2.jpg" class="w-[100px]" alt="" />
+          </div>
+          <div class="photo w-max p-[5px] cursor-pointer" id="images">
+            <img src="./media/slider-shop-3.jpg" class="w-[100px]" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="w-[49%] flex flex-col gap-[30px]">
+        <div class="p-[10px]">
+          <p class="font-semibold text-[22px]">کت لی مردانه اسپرت Fshion</p>
+        </div>
+        <div class="flex flex-col gap-[10px]">
+          <div>
+            <span
+              class="price p-[5px_10px] text-white rounded-[2px] bg-[#FF385C]"
+              >33%</span
+            >
+            <span class="price font-semibold text-[gray]">2,739,000</span>
+          </div>
+          <div>
+            <span class="price text-[36px] font-semibold text-[#FF385C]"
+              >1,829,000</span
+            >
+            <span class="text-[#FF385C] font-semibold">تومان</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[20px] border-b pb-[30px]">
+          <p class="text-[16px] text-[gray] flex gap-[12px]">
+            آستین <span class="text-black">بلند</span>
+          </p>
+          <p class="text-[16px] text-[gray] flex gap-[12px]">
+            جنس <span class="text-black">لی</span>
+          </p>
+          <p class="text-[16px] text-[gray] flex gap-[12px]">
+            رنگ <span class="text-black">آبی روشن</span>
+          </p>
+          <p class="text-[16px] text-[gray] flex gap-[12px]">
+            سایز <span class="text-black">XXXL,XXL,XL,L</span>
+          </p>
+          <a href="#info">اطلاعات بیشتر</a>
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <p class="text-[18px]">
+            سایز :
+            <span class="text-[14px] text-[gray]"
+              >لطفا سایز خود را انتخاب کنید
+            </span>
+          </p>
+          <div class="size w-[65%]">
+            <ul class="w-[100%] flex justify-between items-center">
+              <li class="w-[24%] p-[10px] flex justify-center items-center">
+                L
+              </li>
+              <li class="w-[24%] p-[10px] flex justify-center items-center">
+                XL
+              </li>
+              <li class="w-[24%] p-[10px] flex justify-center items-center">
+                XXL
+              </li>
+              <li class="w-[24%] p-[10px] flex justify-center items-center">
+                XXXL
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="p-[10px] flex justify-between flex-wrap items-center gap-[5px]"
+        >
+          <div
+            class="shop-1 w-[70%] flex gap-[10px] justify-center items-center bg-black p-[10px_15px] rounded-[2px]"
+          >
+            <img src="./media/shop-1.svg" alt="" /><span
+              class="text-[18px] font-semibold text-white"
+              >افزودین به سبد خرید</span
+            >
+          </div>
+          <div class="like p-[12px] w-[20%] flex justify-center items-center">
+            <img src="./media/like.svg" alt="" />
+          </div>
+          <div
+            class="w-[100%] p-[5px] flex justify-start gap-[15px] items-center"
+          >
+            <p class="text-[14px] text-[gray]">اشتراک گذاری با دیگران</p>
+            <img src="./media/telegram.svg" alt="" />
+            <img src="./media/watsapp.svg" alt="" />
+            <div class="link flex justify-center items-center gap-[5px]">
+              <img src="./media/link.svg" alt="" />
+              <p>کپی لینک</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[10px]">
+          <p class="font-semibold">رنگ های دیگر</p>
+          <div class="size w-max p-[10px]">
+            <img src="./media/size.jpg" class="w-[100px]" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="lg:border-y border-x-0 w-[95vw] xl:w-[90vw] 2xl:w-[70vw] mx-auto flex justify-between flex-wrap sm:flex-nowrap items-center gap-[10px] my-[100px] p-[15px_10px]"
+    >
+      <div
+        class="w-[42%] sm:w-[24%] flex flex-col justify-between text-center items-center"
+      >
+        <img src="./media/svg-1.svg" alt="" /><span
+          class="text-[12px] md:text-[14px] text-[gray]"
+          >ارسال سریع و آسان کالا</span
+        >
+      </div>
+      <div
+        class="w-[42%] sm:w-[24%] flex flex-col justify-between text-center items-center"
+      >
+        <img src="./media/svg-2.svg" alt="" /><span
+          class="text-[12px] md:text-[14px] text-[gray]"
+          >امکان پرداخت حضوری
+        </span>
+      </div>
+      <div
+        class="w-[42%] sm:w-[24%] flex flex-col justify-between text-center items-center"
+      >
+        <img src="./media/svg-3.svg" alt="" /><span
+          class="text-[12px] md:text-[14px] text-[gray]"
+          >ضمانت بازگشت کالا</span
+        >
+      </div>
+      <div
+        class="w-[42%] sm:w-[24%] flex flex-col justify-between text-center items-center"
+      >
+        <img src="./media/svg-4.svg" alt="" /><span
+          class="text-[12px] md:text-[14px] text-[gray]"
+          >خدمات پس از فروش</span
+        >
+      </div>
+      <div
+        class="hidden lg:flex flex-col w-[24%] text-center justify-center items-center"
+      >
+        <img src="./media/svg-5.svg" alt="" /><span
+          class="text-[14px] text-[gray]"
+          >پاسخگویی سریع</span
+        >
+      </div>
+    </div>
+    <div
+      class="w-[98vw] xl:w-[90vw] 2xl:w-[70vw] pb-[150px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-[30px] p-[10px]"
+      id="info"
+    >
+      <div class="titr w-max"><p>مشخصات محصول</p></div>
+      <div class="w-[100%] lg:w-[75%]">
+        <ul class="box w-[100%] flex flex-col gap-[10px]">
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز لارج</p>
+            <p class="md:text-[18px]">دورسینه=116 قد=69 آستین=65</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز ایکس لارج</p>
+            <p class="md:text-[18px]">دورسینه=120 قد=70 آستین66</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز دو ایکس لارج</p>
+            <p class="md:text-[18px]">دورسینه=124 قد=71 آستین67</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز سه ایکس لارج</p>
+            <p class="md:text-[18px]">دورسینه=128 قد=73 آستین=68</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز توضیحات</p>
+            <p class="md:text-[18px]">کاپشن دارای جیب</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">آستین</p>
+            <p class="md:text-[18px]">بلند</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">جنس</p>
+            <p class="md:text-[18px]">لی</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">رنگ</p>
+            <p class="md:text-[18px]">آبی روشن</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز</p>
+            <p class="md:text-[18px]">XXXL,XXL,XL,L</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">سایز مدل</p>
+            <p class="md:text-[18px]">دو ایکس لارج</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">طرح پارچه</p>
+            <p class="md:text-[18px]">ساده</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">نحوه بسته شدن</p>
+            <p class="md:text-[18px]">دکمه ای</p>
+          </li>
+          <li class="w-[100%] flex justify-between items-center">
+            <p class="md:text-[18px]">نوع</p>
+            <p class="md:text-[18px]">کت</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- slider -->
+    <div class="w-[95vw] xl:w-[90vw] 2xl:w-[70vw] mx-auto mt-[50px] p-[10px]">
+      <p class="font-semibold md:text-[18px] xl:text-[20px]">کالاهای مشابه</p>
+    </div>
+    <section
+      class="root w-[90vw] mx-auto h-[400px] xl:h-[450px] 2xl:h-[500px] my-[50px] relative hidden lg:flex justify-center items-stretch overflow-hidden"
+    >
+      <div
+        class="swiper3 mySwiper3 w-[80%] xl:w-[70%] 2xl:w-[75%] absolute z-20"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex flex-col justify-center items-center">
+            <div class="slider-photo">
+              <img src="./media/photo-slider-1.jpg" alt="" />
+            </div>
+            <div class="slider-price flex flex-col">
+              <div class="name">کت لی مردانه اسپرت</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <span
+                  class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                  >31%</span
+                >
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-2.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن لی مردانه Alvin</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-3.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن لی مردانه Alvin</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-4.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن لی مردانه Alvin</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-5.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-6.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-7.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-8.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-9.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                  <p>649,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <div class="slider-photo">
+                <img src="./media/photo-slider-10.jpg" alt="" />
+              </div>
+              <div class="slider-price flex flex-col">
+                <div class="name">کاپشن پافر شمعی مردانه</div>
+                <div class="preice flex justify-center items-center gap-[10px]">
+                  <span
+                    class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white"
+                    >31%</span
+                  >
+                  <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                  <p>729,000 تومان</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section
+      class="root-1 w-[99vw] mx-auto h-[350px] sm:h-[520px] md:h-[620px] my-[20px] relative flex lg:hidden justify-center items-stretch"
+    >
+      <div class="swiper4 mySwiper4 sm:w-[80%] absolute z-20">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex flex-col justify-center items-center">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-1.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن لی مردانه Alvin</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-2.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن لی مردانه Alvin</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-3.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن لی مردانه Alvin</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-4.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن لی مردانه Alvin</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-5.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-6.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-7.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-8.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-9.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                <p>649,000 تومان</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-photo relative">
+              <img src="./media/photo-slider-10.jpg" alt="" />
+              <span
+                class="bg-[#FF385C] p-[2px_5px] text-[16px] rounded-[2px] text-white absolute right-0 bottom-0"
+                >31%</span
+              >
+            </div>
+            <div class="slider-price flex flex-col gap-[20px]">
+              <div class="name">کاپشن پافر شمعی مردانه</div>
+              <div class="preice flex justify-center items-center gap-[10px]">
+                <p class="text-[#a4a4a4] line-through font-">1,939,000</p>
+                <p>729,000 تومان</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <div
+      class="foot justify-center items-center hidden lg:flex p-[30px_20px] mx-auto mt-[250px]"
+    >
+      <div class="flex w-[100%] xl:w-[80%] justify-between">
+        <div class="flex flex-col justify-center items-start gap-[5px] w-[30%]">
+          <div class="flex justify-center items-center gap-[10px]">
+            <span class="w-[10px] h-[10px] rounded-[50%] bg-[#FF385C]"></span>
+            <p>10% تخفیف با ثبت شماره موبایل</p>
+          </div>
+          <div>
+            <p class="text-[gray] text-[12px]">
+              همین حالا با ثبت شماره ، برای سفارش بعدی 10% تخفیف
+            </p>
+          </div>
+        </div>
+        <div class="flex w-[35%] justify-between">
+          <div class="w-[70%]">
+            <input
+              type="tel"
+              name=""
+              class="h-[100%] w-[100%] text-[16px] bg-[#e2e2e2] p-[5px]"
+              id=""
+              placeholder="مثال : 09xxxxxxxxx "
+            />
+          </div>
+          <div
+            class="number w-[30%] text-[14px] flex justify-center items-center"
+          >
+            <a href="#">ارسال شماره</a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-[30%] gap-[20px]">
+          <div class="image"><img src="./media/image-1.svg" alt="" /></div>
+          <div class="image"><img src="./media/image-2.svg" alt="" /></div>
+          <div class="image"><img src="./media/image-3.svg" alt="" /></div>
+          <div class="image"><img src="./media/image-4.svg" alt="" /></div>
+          <div class="image"><img src="./media/image-5.svg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="footer mt-[100px] w-[98vw] mx-auto p-[5px_10px] flex flex-wrap justify-evenly items-center gap-[10px] lg:hidden"
+    >
+      <div
+        class="flex w-max p-[10px_15px] justify-center items-center gap-[20px]"
+      >
+        <div class="image p-[5px]">
+          <img src="./media/image-1.svg" alt="" />
+        </div>
+        <div class="image p-[5px]">
+          <img src="./media/image-2.svg" alt="" />
+        </div>
+        <div class="image p-[5px]">
+          <img src="./media/image-3.svg" alt="" />
+        </div>
+        <div class="image p-[5px]">
+          <img src="./media/image-4.svg" alt="" />
+        </div>
+        <div class="image p-[5px]">
+          <img src="./media/image-5.svg" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-[5px]">
+        <div class="flex justify-center items-center gap-[10px]">
+          <span class="w-[10px] h-[10px] rounded-[50%] bg-[#FF385C]"></span>
+          <p>10% تخفیف با ثبت شماره موبایل</p>
+        </div>
+        <div class="text-[12px] text-[gray] justify-center items-center">
+          <p>همین حالا با ثبت شماره ، برای سفارش بعدی 10% تخفیف</p>
+        </div>
+      </div>
+
+      <div class="w-[100%]">
+        <div class="w-[100%] flex justify-center items-center">
+          <div class="w-[60%] sm:w-[79%]">
+            <input
+              type="tel"
+              name=""
+              id=""
+              class="bg-[#e4e2e2] w-[100%] h-[30px] sm:h-[44px] p-[10px]"
+              placeholder=" مثال : 09xxxxxxxxx"
+            />
+          </div>
+          <div
+            class="w-[40%] sm:w-[19%] flex justify-center items-center p-[5px_15px] sm:p-[10px_20px] bg-[black] text-white text-[13px] sm:text-[15px]"
+          >
+            <a href="#">ارسال شماره</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div
+      class="flex justify-evenly w-[95vw] p-[70px_10px_10px_10px] mx-auto items-center border-t my-[30px] xl:w-[75vw]"
+    >
+      <div
+        class="flex flex-col xl:flex-row gap-[5px] justify-start items-center w-[24%]"
+      >
+        <img src="./media/s-1.svg" alt="" />
+        <span class="text-[11px] sm:text-[13px] 2xl:text-[15px] text-center"
+          >ارسال ارزان و سریع کالا</span
+        >
+      </div>
+      <div
+        class="flex flex-col xl:flex-row gap-[5px] justify-center items-center w-[24%]"
+      >
+        <img src="./media/s-2.svg" alt="" /><span
+          class="text-[11px] sm:text-[13px] 2xl:text-[15px] text-center"
+          >امکان پرداخت حضوری</span
+        >
+      </div>
+      <div
+        class="flex flex-col xl:flex-row gap-[5px] justify-center items-center w-[24%]"
+      >
+        <img src="./media/s-3.svg" alt="" />
+        <span class="text-[11px] sm:text-[13px] 2xl:text-[15px] text-center"
+          >3 روز ضمانت بازگشت کالا</span
+        >
+      </div>
+      <div
+        class="flex flex-col xl:flex-row gap-[5px] justify-center items-center w-[24%]"
+      >
+        <img src="./media/s-4.svg" alt="" /><span
+          class="text-[11px] sm:text-[13px] 2xl:text-[15px] text-center"
+          >خدمات پس از فروش</span
+        >
+      </div>
+      <div
+        class="flex-col xl:flex-row gap-[5px] justify-center items-center hidden lg:flex w-[24%]"
+      >
+        <img src="./media/s-5.svg" alt="" /><span
+          class="text-[11px] sm:text-[13px] 2xl:text-[15px] text-center"
+          >پاسجگویی سریع</span
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div
+      class="flex flex-col mx-auto p-[10px] w-[95vw] my-[30px] border-t gap-[50px] lg:hidden"
+    >
+      <div class="flex justify-between p-[10px] items-start w-[100%]">
+        <div class="flex flex-col justify-center items-start gap-[7px] w-max">
+          <p class="text-[14px] sm:text-[17px] font-semibold">دایان شاپ</p>
+          <span class="text-[12px] sm:text-[15px]">درباره ما</span>
+          <span class="text-[12px] sm:text-[15px]">تماس با ما</span>
+          <span class="text-[12px] sm:text-[15px]">چرا دایان شاپ</span>
+          <span class="text-[12px] sm:text-[15px]">سوالات متداول</span>
+          <span class="text-[12px] sm:text-[15px]">حریم خصوصی</span>
+        </div>
+        <div class="flex flex-col gap-[7px] w-max">
+          <p class="text-[14px] sm:text-[17px] font-semibold">خدمات مشتریان</p>
+          <span class="text-[12px] sm:text-[15px]">پروفایل</span>
+          <span class="text-[12px] sm:text-[15px]">ثبت گارانتی</span>
+          <span class="text-[12px] sm:text-[15px]">پیگیری گارانتی</span>
+          <span class="text-[12px] sm:text-[15px]">پیگیری سفارش</span>
+          <span class="text-[12px] sm:text-[15px]">قوانین بازگشت کالا</span>
+        </div>
+        <div class="flex flex-col gap-[7px] w-max">
+          <p class="text-[14px] sm:text-[17px] font-semibold">دسته بندی</p>
+          <sapn class="text-[12px] sm:text-[15px]">مردانه</sapn>
+          <sapn class="text-[12px] sm:text-[15px]">زنانه</sapn>
+          <sapn class="text-[12px] sm:text-[15px]">اکسسوری</sapn>
+        </div>
+      </div>
+      <div class="flex w-[100%]">
+        <div class="w-[50%]">
+          <p class="text-[14px] sm:text-[17px] font-semibold">پشتیبانی</p>
+          <span class="text-[12px] sm:text-[15px]"
+            >در روز های کاری از ساعت 9 الی 17 ساعت ، میزبان صدای گرمتان
+            هستیم</span
+          >
+        </div>
+        <div class="w-[50%] flex flex-col items-end justify-center">
+          <span
+            class="phone text-[16px] sm:text-[18px] font-semibold text-red-500"
+            >1370 9100 051</span
+          >
+          <span class="text-[12px] sm:text-[14px] font-semibold text-[gray]"
+            >info@dayanshop.com</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div
+      class="flex flex-col justify-center items-center my-[100px] mb-[200px] gap-[20px] w-[95vw] mx-auto p-[10px] border-t lg:hidden"
+    >
+      <div><img src="./media/logo-b.aspx" alt="" /></div>
+      <div class="flex flex-col gap-[10px] items-start justify-center relative">
+        <p class="text-[16px] sm:text-[18px] font-semibold">
+          فروشگاه اینترنتی دایان شاپ
+        </p>
+        <div class="h-[94px] overflow-hidden" id="more">
+          <span
+            class="text-[13px] sm:text-[15px] flex flex-col items-start gap-[15px] px-[5px]"
+            >فروشگاه اینترنتی دایان‌شاپ، راهکاری آسان برای خریدهای آنلاین شماست.
+            پرداخت در محل، ارائه درگاه‌های امن، پیگیری سریع سفارش‌ها، تضمین
+            سلامت و کیفیت کالا از جمله کلیدی‌ترین ویژگی‌های این فروشگاه اینترنتی
+            است. کالاهای دایان‌شاپ در ۳ دسته‌بندی اصلی شامل پوشاک مردانه، زنانه
+            و اکسسوری طبقه‌بندی می‌شوند. با خرید از دایان شاپ، شیک بپوشید،
+            به‌روز باشید و یک استایل عالی داشته باشید؛ همچنین از دسته‌بندی
+            شگفت‌انگیز می‌توانید تمام محصولات تخفیفی را یکجا بررسی کرده و یک
+            خرید به‌صرفه داشته باشید. تفاوت بین «خوب» و «عالی» در توجه به جزئیات
+            است، دایان‌شاپ را عالی ساخته‌ایم
+            <button
+              class="btnLess flex text-[gray] justify-center items-center"
+              id="btnLess"
+            >
+              <span class="text-[15px]">نمایش کمتر</span>
+              <img
+                src="./media/pointer.svg"
+                class="rotate-[90deg] w-[20px]"
+                alt=""
+              /></button
+          ></span>
+        </div>
+        <button
+          class="btnMore flex text-[gray] justify-center items-center"
+          id="btnMore"
+        >
+          <span class="text-[15px]">نمایش بیشتر</span>
+          <img
+            src="./media/pointer.svg"
+            class="rotate-[-90deg] w-[20px]"
+            alt=""
+          />
+        </button>
+        <button class="top flex justify-center items-center" id="top">
+          <img
+            src="./media/pointer.svg"
+            class="rotate-[90deg] w-[25px]"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <!-- org-about -->
+    <div
+      class="justify-center items-start xl:w-[70%] mx-auto mt-[50px] border-t p-[70px_15px] hidden lg:flex"
+    >
+      <div class="w-[24%]">
+        <img src="./media/logo-b.aspx" alt="" />
+      </div>
+      <div class="flex flex-col gap-[7px] w-[24%]">
+        <p class="text-[16px] xl:text-[18px] font-semibold">دایان شاپ</p>
+        <span class="text-[14px] xl:text-[16px]">درباره ما</span>
+        <span class="text-[14px] xl:text-[16px]">تماس با ما</span>
+        <span class="text-[14px] xl:text-[16px]">چرا دایان شاپ</span>
+        <span class="text-[14px] xl:text-[16px]">سوالات متداول</span>
+        <span class="text-[14px] xl:text-[16px]">حریم خصوصی</span>
+      </div>
+      <div class="flex flex-col gap-[7px] w-[24%]">
+        <p class="text-[16px] xl:text-[18px] font-semibold">خدمات مشتریان</p>
+        <span class="text-[14px] xl:text-[16px]">پروفایل</span>
+        <span class="text-[14px] xl:text-[16px]">ثبت گارانتی</span>
+        <span class="text-[14px] xl:text-[16px]">پیگیری گارانتی</span>
+        <span class="text-[14px] xl:text-[16px]">پیگیری سفارش</span>
+        <span class="text-[14px] xl:text-[16px]">قوانین بازگشت کالا</span>
+      </div>
+      <div class="flex flex-col gap-[7px] w-[24%]">
+        <p class="text-[16px] xl:text-[18px] font-semibold">دسته بندی</p>
+        <span class="text-[14px] xl:text-[16px]">مردانه</span>
+        <span class="text-[14px] xl:text-[16px]">زنانه</span>
+        <span class="text-[14px] xl:text-[16px]">اکسسوری</span>
+      </div>
+      <div class="flex flex-col gap-[7px] w-[24%]">
+        <p class="text-[16px] xl:text-[18px] font-semibold">پشتیبانی</p>
+        <span class="xl:text-[16px]"
+          >در روزهای کاری از ساعت ۹ تا ساعت ۱۷، میزبان صدای گرمتان هستیم.</span
+        >
+        <span class="phone text-red-500 font-semibold text-[18px]"
+          >1370 9100 051</span
+        >
+        <span class="text-[gray]">info@dayanshop.com</span>
+      </div>
+    </div>
+    <!-- org-about -->
+    <div
+      class="flex-col gap-[15px] mt-[50px] mb-[200px] p-[25px] hidden lg:flex xl:w-[70vw] mx-auto relative border-t"
+    >
+      <p class="text-[16px] xl:text-[20px] font-semibold">
+        فروشگاه اینترنتی دایان شاپ
+      </p>
+
+      <span class="text-[14px] xl:text-[16px]"
+        >فروشگاه اینترنتی دایان‌شاپ، راهکاری آسان برای خریدهای آنلاین شماست.
+        پرداخت در محل، ارائه درگاه‌های امن، پیگیری سریع سفارش‌ها، تضمین سلامت و
+        کیفیت کالا از جمله کلیدی‌ترین ویژگی‌های این فروشگاه اینترنتی است.
+        کالاهای دایان‌شاپ در ۳ دسته‌بندی اصلی شامل پوشاک مردانه، زنانه و اکسسوری
+        طبقه‌بندی می‌شوند. با خرید از دایان شاپ، شیک بپوشید، به‌روز باشید و یک
+        استایل عالی داشته باشید؛ همچنین از دسته‌بندی شگفت‌انگیز می‌توانید تمام
+        محصولات تخفیفی را یکجا بررسی کرده و یک خرید به‌صرفه داشته باشید. تفاوت
+        بین «خوب» و «عالی» در توجه به جزئیات است، دایان‌شاپ را عالی
+        ساخته‌ایم.</span
+      >
+      <button
+        class="btnTop absolute bottom-[-30px] lg:bottom-[-50px] left-[35px] flex justify-center items-center gap-[10px]"
+        id="top-1"
+      >
+        بازگشت به بالا
+        <img src="./media/pointer.svg" class="rotate-[90deg] w-[25px]" alt="" />
+      </button>
+    </div>
+    <div
+      class="scroll-shop w-[100vw] mx-auto p-[10px] flex lg:hidden justify-center lg:justify-evenly items-center"
+      id="scroll-shop"
+    >
+      <div class="hidden lg:flex justify-center items-center">
+        <p class="font-semibold text-[20px]">کت لی مردانه اسپرت Fashion</p>
+      </div>
+      <div class="flex justify-center w-[90%] lg:w-max gap-[30px] items-center">
+        <div class="flex flex-col justify-center items-center">
+          <div class="w-[100%] flex flex-col">
+            <span class="scroll-price w-max">33%</span>
+
+            <span class="scroll-oldprice">2,739,000</span>
+          </div>
+          <div class="w-[100%]">
+            <span class="scroll-newprice">1,829,000</span>
+            <span class="toman">تومان</span>
+          </div>
+        </div>
+        <div class="scroll-shop-1 flex justify-center items-center gap-[5px]">
+          <img src="./media/shop-1.svg" class="w-[20px]" alt="" />
+          <p class="text-[16px]">افزودن به سبد خرید</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./js/product.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- ***** -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 2.2,
+        spaceBetween: 30,
+        freeMode: true,
+      });
+    </script>
+  </body>
+</html>
